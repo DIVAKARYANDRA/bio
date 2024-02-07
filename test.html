@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Image in Triangle</title>
+    <style>
+        .triangle-container {
+            position: relative;
+            width: 0;
+            height: 0;
+            border-left: 200px solid transparent;
+            border-right: 200px solid transparent;
+            border-bottom: 200px solid #4CAF50; /* Adjust color as needed */
+            margin: auto;
+            display: block;
+        }
+
+        .image-inside {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-40%, -50%);
+            width: 300px; /* Adjust the width of the image */
+            height: 400px; /* Adjust the height of the image */
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="triangle-container">
+        <img src="./images/protfolio/diva-profile.png" alt="Image" class="image-inside">
+    </div>
+
+</body>
+</html>
