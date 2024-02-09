@@ -770,6 +770,44 @@
     color: black;
 }
 
+.container5{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)), url(../images/protfolio/about-bg.jpg) no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.websites,
+.games{
+    background-color: #173514;
+    width: 80%;
+    height: 40%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  
+}
+
+.website,
+.game{
+    margin: 10px;
+    background-color: rgb(155, 119, 51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.website a,
+.game a{
+    text-decoration: none;
+    color: black;
+}
+
+
 /* media-screens */
 
 @media(max-width: 1130px){
